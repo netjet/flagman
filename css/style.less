@@ -504,22 +504,17 @@ body {
           }
         }
       }
-      
-  }
-
-
-      .service-center {
+        .our-services {
         .page-header {
-          background-color: #fff;
-          color: #141415;
+          background-color: #222d35;
+          color: #fff;
           height: 70px;
           
           .number {
             .left;
             line-height: 70px;
             padding: 0 20px;
-            background-color: #d44026;
-            color: #fff;
+            background-color: #28333b;
             font-size: 2.500em;
           }
           
@@ -527,8 +522,7 @@ body {
             .left;
             line-height: 70px;
             font-size: 1.375em;
-            background-color: #fd5235;
-            color: #fff;
+            background-color: #1d252c;
             padding: 0 20px;
           }
           
@@ -541,134 +535,430 @@ body {
           }
         }
         
-        .service-center-content {
+        .our-services-content {
           position: relative;
           margin: 0;
           padding: 0;
-          background: url(images/service-center-background.jpg) 100% 100% no-repeat; /* Добавляем фон */
-          background-size: cover; /* Масштабируем фон */
-          background-position: center left;    
+          background: #fff;
           width: 100%;
-          min-height: 620px;
-          padding: 60px 0 0 0;
-          
-          .tools-icon {
-            height: 38px;
-            background: url(images/tools-icon.png) no-repeat center center;
-            margin-top: 50px;
+          min-height: 470px;
+          padding: 100px 0 0 0;
+         
+        .all-services-block {
+          text-align: center;   
+        }
+         
+        .all-services {
+          background-color: #fe5539;
+          color: #fff;
+          position: relative;
+          height: 40px;
+          line-height: 40px;
+          padding: 10px;
+          cursor: pointer;
+          text-decoration: none;
+          top: 50px;
+        }
+        
+        .full-content:hover {
+          background-color: #ff5a3e;
+        }
+        
+        .full-content:active {
+          background-color: #ec462a;
+        }
+          .service-item:hover {
+            cursor: pointer;
+          }
+          .service-item {
             margin-bottom: 50px;
-          }
-          
-          p.service-info {
-            font-size: 1.063em;
-            color: #fff;
-            line-height: 30px;
-            text-align: center;
-            position: relative;
-            margin: 0 auto;
-            width: 80%;
-          }
-          
-          .team-photo:before {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            left: 0;
-            height: 30%;
-            background-color: rgba(255,255,255,0);
-            background-image: -webkit-linear-gradient(bottom, #000, rgba(0,0,0,0));
-            background-image: -moz-linear-gradient(bottom, #000, rgba(0,0,0,0));
-            background-image: -o-linear-gradient(bottom, #000, rgba(0,0,0,0));
-            background-image: linear-gradient(to top, #000, rgba(0,0,0,0));
-            content: ' ';
-            display: block;
-            z-index: 10;
-            } 
+            overflow: hidden;
+            .transition;
             
-          .team-photo {
-            width: 85%;
-            position: relative;
-            margin-bottom: 20px;
-            
-            img {
-              position: relative;
-            }
-            
-            .team-photo-sign {
-              position: absolute;
-              bottom: 0;
-              display: block;
-              z-index: 20;
-              padding: 0 40px 0px 15px;
-              margin-bottom: 15px;
-              border-left: 5px solid #fd5336;
-              
-              span {
-                font-size: 0.938em;
-                color: #fff;    
+            .service-icon {
+              img {
+                width: 70px;
+                height: 70px;
+                position: relative;
+                margin: 0 auto;
               }
             }
-            
-           .photo-zoom {
-             width: 40px;
-             height: 40px;
-             display: block;
-             right: 0;
-             bottom: 15px;
-             position: absolute;
-             background-color: #fe5539;
-             background-image: url(images/zoom.png);
-             background-repeat: no-repeat;
-             background-position: center center;
-             z-index: 20;
-             cursor: pointer;
-             .transition;
-           }
-            .photo-zoom:hover {
-              background-color: #ff5a3e;
-            }
-            
-            .photo-zoom:active {
-              background-color: #ec462a;
-            }
-          }
-          
-          .content-block {
-            background-color: #fff;
-            padding: 30px 70px 30px 30px;
-            color: #425783;
-            line-height: 30px;
-            position: relative;
-
-            
-            .full-content {
-              background-color: #fe5539;
-              color: #fff;
-              position: absolute;
-              height: 40px;
-              line-height: 40px;
-              padding: 0 10px;
-              bottom: 10px;
-              right: 0;
-              cursor: pointer;
-            }
-            
-            .full-content:hover {
-              background-color: #ff5a3e;
-            }
-            
-            .full-content:active {
-              background-color: #ec462a;
+            .service-description {
+              h3 {
+                color: #222d35;
+                font-size: 1.125em;
+                text-transform: uppercase;
+                margin: 0 0 20px 0;
+                position: relative;
+              }
+              p {
+                color: #627685;
+                font-size: 0.875em;
+                line-height: 20px;
+              }
             }
           }
         }
       }
+  }
+
+
+  .service-center {
+    .page-header {
+      background-color: #fff;
+      color: #141415;
+      height: 70px;
+      
+      .number {
+        .left;
+        line-height: 70px;
+        padding: 0 20px;
+        background-color: #d44026;
+        color: #fff;
+        font-size: 2.500em;
+      }
+      
+      .title {
+        .left;
+        line-height: 70px;
+        font-size: 1.375em;
+        background-color: #fd5235;
+        color: #fff;
+        padding: 0 20px;
+      }
+      
+      .anotation {
+        .left;
+        font-size: 0.938em;
+        font-style: italic;
+        padding: 0 20px;
+        line-height: 70px;
+      }
+    }
+    
+    .service-center-content {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      background: url(images/service-center-background.jpg) 100% 100% no-repeat; /* Добавляем фон */
+      background-size: cover; /* Масштабируем фон */
+      background-position: center left;    
+      width: 100%;
+      min-height: 620px;
+      padding: 60px 0 0 0;
+      
+      .tools-icon {
+        height: 38px;
+        background: url(images/tools-icon.png) no-repeat center center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      p.service-info {
+        font-size: 1.063em;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+      }
+      
+      .team-photo:before {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        height: 30%;
+        background-color: rgba(255,255,255,0);
+        background-image: -webkit-linear-gradient(bottom, #000, rgba(0,0,0,0));
+        background-image: -moz-linear-gradient(bottom, #000, rgba(0,0,0,0));
+        background-image: -o-linear-gradient(bottom, #000, rgba(0,0,0,0));
+        background-image: linear-gradient(to top, #000, rgba(0,0,0,0));
+        content: ' ';
+        display: block;
+        z-index: 10;
+        } 
+        
+      .team-photo {
+        width: 85%;
+        position: relative;
+        margin-bottom: 20px;
+        
+        img {
+          position: relative;
+        }
+        
+        .team-photo-sign {
+          position: absolute;
+          bottom: 0;
+          display: block;
+          z-index: 20;
+          padding: 0 40px 0px 15px;
+          margin-bottom: 15px;
+          border-left: 5px solid #fd5336;
+          
+          span {
+            font-size: 0.938em;
+            color: #fff;    
+          }
+        }
+        
+       .photo-zoom {
+         width: 40px;
+         height: 40px;
+         display: block;
+         right: 0;
+         bottom: 15px;
+         position: absolute;
+         background-color: #fe5539;
+         background-image: url(images/zoom.png);
+         background-repeat: no-repeat;
+         background-position: center center;
+         z-index: 20;
+         cursor: pointer;
+         .transition;
+       }
+        .photo-zoom:hover {
+          background-color: #ff5a3e;
+        }
+        
+        .photo-zoom:active {
+          background-color: #ec462a;
+        }
+      }
+      
+      .content-block {
+        background-color: #fff;
+        padding: 30px 70px 30px 30px;
+        color: #425783;
+        line-height: 30px;
+        position: relative;
+  
+        
+        .full-content {
+          background-color: #fe5539;
+          color: #fff;
+          position: absolute;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 10px;
+          bottom: 10px;
+          right: 0;
+          cursor: pointer;
+        }
+        
+        .full-content:hover {
+          background-color: #ff5a3e;
+        }
+        
+        .full-content:active {
+          background-color: #ec462a;
+        }
+      }
+    }
+  }
       
   
+  .qa {
+    .page-header {
+      background-color: #5d7689;
+      color: #141415;
+      height: 70px;
+      
+      .number {
+        .left;
+        line-height: 70px;
+        padding: 0 20px;
+        background-color: #758b9b;
+        color: #fff;
+        font-size: 2.500em;
+      }
+      
+      .title {
+        .left;
+        line-height: 70px;
+        font-size: 1.375em;
+        background-color: #475d6f;
+        color: #fff;
+        padding: 0 20px;
+      }
+      
+      .anotation {
+        .left;
+        font-size: 0.938em;
+        font-style: italic;
+        padding: 0 20px;
+        line-height: 70px;
+        color: #fff;
+      }
+    }
+    
+    .qa-content {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      background: url(images/qa-background.jpg) 100% 100% no-repeat; /* Добавляем фон */
+      background-size: cover; /* Масштабируем фон */
+      background-position: center left;    
+      width: 100%;
+      min-height: 620px;
+      padding: 80px 0 0 0;
+      
+      .qa-cat-navigation {
+        overflow: hidden;
+        
+      .qa-answer {
+        background: #fff;
+        padding: 30px;
+      }
+      
+      a.current {
+        .qa-num {
+          background: #fff;
+          color: #5d7689;
+        }
+      }
+      
+      a {
+        color: #fff;
+        text-decoration: none;
+        
+        .qa-num {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          display: inline-block;
+          background-color: #475d6f;
+          color: #fff;
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.250em;
+          margin: 0 20px 20px 0;
+        }
+      }
+    }
+    
+    .qa-q-content {
+      padding: 30px 20px;
+      background-color: #fff;
+      margin-top: 50px;
+      
+      .qa-question {
+        margin: 0 0 20px 0;
+        
+        .q-icon {
+          color: #fff;
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          line-height: 60px;
+          font-size: 3.125em;
+          font-weight: bold;
+          text-align: center;
+          background-color: #fd5235;
+          margin: 0 20px 0 0;
+          vertical-align: top;
+        }
+        
+        .q-label {
+          display: inline-block;
+          vertical-align: top;
+          
+          p {
+            color: #627685;
+            font-size: 1em;
+            max-width: 700px;
+            line-height: 30px;
+          }
+          
+          h4 {
+            text-transform: uppercase;
+            font-size: 1.125em;
+            color: #222d35;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      
+      .qa-answer {
+        .a-icon {
+          color: #fff;
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          line-height: 60px;
+          font-size: 3.125em;
+          font-weight: bold;
+          text-align: center;
+          background-color: #6b869a;
+          margin: 0 20px 0 0;
+          vertical-align: top;
+        }
+        
+        .a-label {
+          display: inline-block;
+          vertical-align: top;
+          
+          p {
+            color: #627685;
+            font-size: 1em;
+            max-width: 700px;
+            line-height: 30px;
+          }
+          
+          h4 {
+            text-transform: uppercase;
+            font-size: 1.125em;
+            color: #222d35;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+      
+      
+    }
+  }
 
 
-
-
+  .contacts-page {
+    .page-header {
+      background-color: #fff;
+      color: #141415;
+      height: 70px;
+      
+      .number {
+        .left;
+        line-height: 70px;
+        padding: 0 20px;
+        background-color: #d44026;
+        color: #fff;
+        font-size: 2.500em;
+      }
+      
+      .title {
+        .left;
+        line-height: 70px;
+        font-size: 1.375em;
+        background-color: #fd5235;
+        color: #fff;
+        padding: 0 20px;
+      }
+      
+      .anotation {
+        .left;
+        font-size: 0.938em;
+        font-style: italic;
+        padding: 0 20px;
+        line-height: 70px;
+      }
+    }
+    
+    .contacts-content {
+      height: 470px;
+    }
+  }
 
 
 
@@ -753,8 +1043,6 @@ body {
   max-height: 100%!important;
   position: relative;
 }
-
-
 
 .elastislide-carousel ul li a {
   display: inline-block;
