@@ -957,6 +957,28 @@ body {
     
     .contacts-content {
       height: 470px;
+      position: relative;
+      
+      .info-map {
+        width:100%;
+        height:470px;
+        
+        z-index: 10;
+      }
+      
+      .contacts-information {
+        background: #202a32;
+        color: #fff;
+        position: absolute;
+        top: 15%;
+        z-index: 20;
+        width: 200px;
+        font-size: 18px;
+        padding: 20px;
+        height: auto;
+        margin-left: -610px;
+        left: 50%;
+      }
     }
   }
 
@@ -1117,4 +1139,63 @@ body {
   height: 100px;
   background: #222d35;
   position: relative;
+  
+    .logo {
+    width: 132px;
+    height: 100px;
+  }
+  
+  .logo-title {
+    height: 30px;
+    border-left: 2px solid #fff;
+    padding: 0 10px;
+    margin: 40px 25px;
+    
+    span {
+      color: #fff;
+      display: block;
+      font-size: 0.875em;
+    }
+  }
+  
+  nav {
+    .right;
+    width: 60%;
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: table;
+      
+      li {
+       display: table-cell;
+       text-align: center;
+       width: 16.666%;
+       vertical-align: middle;
+       
+       a:hover {
+         background-color: #2a3741;
+       }
+       
+       a {
+         display: block;
+         padding: 0 10px;
+         height: 100px;
+         line-height: 100px;
+         text-decoration: none;
+         font-size: 1em;
+         color: #fff;
+         white-space: nowrap;
+         .transition;
+       }
+      }
+      
+      li.current a {
+         background-color: #fd5033;
+      }
+      
+      
+    }
+  }
 }
