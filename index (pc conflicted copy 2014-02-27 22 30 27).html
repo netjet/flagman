@@ -15,13 +15,21 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/jquery.custombox.css">
 		<script src="js/vendor/modernizr-2.7.1.min.js"></script>
-		<script src="js/vendor/jquery-2.1.0.min.js"></script>
+		<script src="js/vendor/jquery-1.11.0.min.js"></script>
 		<script src="js/vendor/less-1.3.3.min.js" type="text/javascript"></script>
 		<script src="js/jquery.elastislide.js" type="text/javascript"></script>
 		<script src="js/jquery.custombox.js" type="text/javascript"></script>
 		<script src="js/scrollReveal.js"></script>
 		<script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
-		<script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+<script>
+$('#call-dialog').on('click', function ( e ) {
+    $.fn.custombox( this, {
+        overlay: false,
+        effect: 'fadein'
+    });
+    e.preventDefault();
+});
+	</script>
 		<script type="text/javascript">
 			// Создаем обработчик загрузки страницы:
 			DG.autoload(function() {
@@ -56,47 +64,16 @@
 				});
 				// Добавить маркер на карту:
 				myMap.markers.add(myMarker);
-				myMap.disableScrollZoom()
 			});
-
+			
+			
+			
 		</script>
 		<script>
-			/* scrollUp Minimum setup */
-			// $(function () {
-			// 	$.scrollUp();
-			// });
-
-			// scrollUp full options
+		
 			$(function() {
-				$.scrollUp({
-					scrollName : 'scrollUp', // Element ID
-					scrollDistance : 600, // Distance from top/bottom before showing element (px)
-					scrollFrom : 'top', // 'top' or 'bottom'
-					scrollSpeed : 600, // Speed back to top (ms)
-					easingType : 'linear', // Scroll to top easing (see http://easings.net/)
-					animation : 'fade', // Fade, slide, none
-					animationInSpeed : 300, // Animation in speed (ms)
-					animationOutSpeed : 300, // Animation out speed (ms)
-					scrollText : 'Наверх', // Text for element, can contain HTML
-					scrollTitle : false, // Set a custom <a> title if required. Defaults to scrollText
-					scrollImg : false, // Set true to use image
-					activeOverlay : false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-					zIndex : 2147483647 // Z-Index for the overlay
-				});
-			});
-
-			// Destroy example
-			$(function() {
-				$('.destroy').click(function() {
-					$.scrollUp.destroy();
-				})
-			});
-
-		</script>
-		<script>
-			$(function() {
-
-				window.scrollReveal = new scrollReveal();
+				
+				  window.scrollReveal = new scrollReveal();
 				$('a[href^="#"]').click(function() {
 					var target = $(this).attr('href');
 					$('html, body').animate({
@@ -123,8 +100,7 @@
 							</div>
 							<div class="logo-title left">
 								<span>Ремонт и обслуживание</span>
-								<span>автомобилей</span>
-
+								<span>автомобидей</span>
 							</div>
 							<nav>
 								<ul>
@@ -138,10 +114,10 @@
 										<a href="#our-services">Виды услуг</a>
 									</li>
 									<li>
-										<a href="#qa-page">Вопросы и ответы</a>
+										<a href="#">Вопросы и ответы</a>
 									</li>
 									<li>
-										<a href="#contacts-page">Контакты</a>
+										<a href="#">Контакты</a>
 									</li>
 									<li>
 										<a href="#">Поиск по сайту</a>
@@ -460,13 +436,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="qa" id="qa-page">
+					<div class="qa">
 						<div class="page-header">
 							<div class="onepcssgrid-1300">
 								<div class="onerow">
 									<div class="col12">
-										<h3 class="number">4</h3>
-										<h3 class="title">Вопросы и ответы</h3>
+										<h3 class="number">1</h3>
+										<h3 class="title">НАША КОМАНДА</h3>
 										<p class="anotation">
 											«Вы смело можете доверить ваш автомобиль нашим экспертам»
 										</p>
@@ -537,7 +513,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="contacts-page" id="contacts-page">
+					<div class="contacts-page">
 						<div class="page-header ">
 							<div class="onepcssgrid-1300">
 								<div class="onerow">
@@ -567,7 +543,7 @@
 			</div><!-- .wrapper -->
 
 			<footer class="footer">
-				<div class="onepcssgrid-1300">
+<div class="onepcssgrid-1300">
 					<div class="onerow">
 						<div class="col12 last">
 							<div class="logo left">
@@ -603,8 +579,9 @@
 						</div>
 
 					</div>
-				</div>
-			</footer><!-- .footer -->
-
+				</div>			</footer><!-- .footer -->
+				    <div id="modal" style="display: none;">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
 	</body>
 </html>
